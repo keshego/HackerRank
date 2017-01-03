@@ -1,0 +1,17 @@
+//Day 2: Operators
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    double mc,tipp,taxp,tc;
+    cin>>mc>>tipp>>taxp;
+    double c1=mc*(tipp/100),c2=mc*(taxp/100);
+    //cout<<c1<<endl<<c2<<endl;
+    tc =round( mc + c1 + c2);
+    cout<<"The total meal cost is "<<tc<<" dollars."<<endl;
+
+    return 0;
+}
