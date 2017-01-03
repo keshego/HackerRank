@@ -1,0 +1,31 @@
+//Day 3: Intro to Conditional Statements
+
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main(){
+    int n;
+    string ans="Weird",ans1="Not Weird";
+    cin >> n;
+    if(n%2 !=0) cout<<ans<<endl;
+    else if(!(n%2) && n>=2 && n<=5) cout<<ans1<<endl;
+    else if(!(n%2) && n>=6 && n<=20) cout<<ans<<endl;
+    else if(!(n%2) && n>20) cout<<ans1<<endl;
+    return 0;
+}
+
